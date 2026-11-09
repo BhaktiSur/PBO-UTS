@@ -1,17 +1,12 @@
-
+/** Bahan utama kopi. */
 public class BahanKopi extends BahanMinuman {
-
-    public BahanKopi(String namaBahan, int jumlah) {
-        super(namaBahan, jumlah);
-    }
+    public BahanKopi(String namaBahan, int jumlah) { super(namaBahan, jumlah); }
 
     @Override
-    public String getKategori() {
-        return "Bahan Kopi";
-    }
+    public String getKategori() { return "Bahan Kopi"; }
 
     @Override
     public void tampilkanKegunaan() {
-        System.out.println("Kegunaan: Digunakan untuk membuat minuman kopi.");
+        System.out.println("Kegunaan   : digunakan sebagai bahan utama kopi.");
     }
 }

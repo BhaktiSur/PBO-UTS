@@ -1,4 +1,4 @@
-/** Child class untuk minuman yang disajikan dengan es batu. */
+/** Child penyajian untuk minuman menggunakan es batu. */
 public class MinumanEs extends PenyajianMinuman {
     private final int jumlahEsBatu;
 
@@ -10,19 +10,14 @@ public class MinumanEs extends PenyajianMinuman {
         this.jumlahEsBatu = jumlahEsBatu;
     }
 
-    public int getJumlahEsBatu() {
-        return jumlahEsBatu;
-    }
+    public int getJumlahEsBatu() { return jumlahEsBatu; }
 
     @Override
-    public String getJenisPenyajian() {
-        return "Es (dengan es batu)";
-    }
+    public String getJenisPenyajian() { return "Dengan es batu"; }
 
     @Override
     public void tampilkanCaraPenyajian() {
-        System.out.println("Cara menyajikan: masukkan " + jumlahEsBatu
-                + " es batu ke gelas, lalu tuangkan "
-                + getMinuman().getNama() + " dan sajikan.");
+        System.out.println("Cara saji  : masukkan " + jumlahEsBatu
+                + " es batu lalu tuangkan " + getMinuman().getNama() + ".");
     }
 }

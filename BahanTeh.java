@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 4eb0a96a273db224fe34066cd261338aa4e17c53
+/** Bahan utama teh. */
 public class BahanTeh extends BahanMinuman {
-
-    public BahanTeh(String namaBahan, int jumlah) {
-        super(namaBahan, jumlah);
-    }
+    public BahanTeh(String namaBahan, int jumlah) { super(namaBahan, jumlah); }
 
     @Override
     public String getKategori() {
@@ -15,10 +9,6 @@ public class BahanTeh extends BahanMinuman {
 
     @Override
     public void tampilkanKegunaan() {
-<<<<<<< HEAD
-        System.out.println("Kegunaan: Digunakan untuk membuat minuman teh.");
-=======
-        System.out.println("Kegunaan: Digunakan sebagai bahan dasar minuman teh.");
->>>>>>> 4eb0a96a273db224fe34066cd261338aa4e17c53
+        System.out.println("Kegunaan   : digunakan sebagai bahan utama teh.");
     }
 }

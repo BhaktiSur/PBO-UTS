@@ -1,3 +1,4 @@
+/** Child Minuman untuk jenis kopi. */
 public class MinumanKopi extends Minuman {
     private final boolean pakaiSusu;
 
@@ -6,18 +7,14 @@ public class MinumanKopi extends Minuman {
         this.pakaiSusu = pakaiSusu;
     }
 
+    public boolean isPakaiSusu() { return pakaiSusu; }
+
     @Override
-    public String getJenis() {
-        return "Kopi";
-    }
+    public String getJenis() { return "Kopi"; }
 
     @Override
     public void tampilkanCara() {
-        System.out.print("Cara membuat: seduh kopi dengan air panas");
-        if (pakaiSusu) {
-            System.out.println(", lalu tambahkan susu.");
-        } else {
-            System.out.println(".");
-        }
+        System.out.println("Cara membuat: seduh kopi dengan air panas"
+                + (pakaiSusu ? ", lalu tambahkan susu." : "."));
     }
 }

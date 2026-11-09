@@ -1,7 +1,4 @@
-/**
- * Parent class untuk mengatur cara penyajian suatu Minuman.
- * Setiap penyajian memiliki satu objek Minuman yang sudah dibuat anggota 1.
- */
+/** Parent untuk cara menyajikan sebuah objek Minuman. */
 public abstract class PenyajianMinuman {
     private final Minuman minuman;
 
@@ -12,12 +9,8 @@ public abstract class PenyajianMinuman {
         this.minuman = minuman;
     }
 
-    public Minuman getMinuman() {
-        return minuman;
-    }
-
+    public Minuman getMinuman() { return minuman; }
     public abstract String getJenisPenyajian();
-
     public abstract void tampilkanCaraPenyajian();
 
     public void tampilkanInfoPenyajian() {
